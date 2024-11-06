@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Distritos from './components/Distritos';
+import Poblacion from './components/Poblacion';
+import Hogares from './components/Hogares';
+import Educacion from './components/Educacion';
+import Economia from './components/Economia';
+import GraficoPoblacionDistritos from './components/GraficoPoblacionDistritos';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <h1>Dashboard de Censos</h1>
+            <GraficoPoblacionDistritos />
+            <Distritos />
+            <Poblacion />
+            <Hogares />
+            <Educacion />
+            <Economia />
+        </div>
+    );
+};
 
 export default App;
